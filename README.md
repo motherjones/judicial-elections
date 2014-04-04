@@ -1,4 +1,4 @@
-# Data Diary for BTS Transtats, T100
+# Data Diary for Mother Jones Judicial Campaign Finance Investigation
 
 This is a sample data diary that walks through the steps of acquiring [air carrier payload data from the Bureau of Transportation Statistics](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=259&DB_Short_Name=Air%20Carriers) and preparing it for SQL analysis.
 
@@ -11,7 +11,7 @@ This guide will cover how to download a dataset about U.S. air carriers from a g
 
 #### Source
 
-- [Webform for T-100 Domestic Segment (U.S. Carriers)](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=259&DB_Short_Name=Air%20Carriers) - wherefrom the CSV is downloaded
+- [Follow the Money)](http://beta.followthemoney.org/) - wherefrom the CSV is downloaded NEEDS BETTER LINK
 
 #### Tools
 
