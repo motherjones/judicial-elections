@@ -1,6 +1,6 @@
 # Data Diary for Mother Jones Judicial Campaign Finance Investigation
 
-This is a sample data diary that walks through the steps of acquiring [air carrier payload data from the Bureau of Transportation Statistics](http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=259&DB_Short_Name=Air%20Carriers) and preparing it for SQL analysis.
+This is a data diary that walks through the steps of acquiring [campaign contribution data for state supreme court and lower court candidates](), preparing it for SQL analysis and producing specific charts for an online interactive at [MotherJones.com](http://www.motherjones.com/)
 
 ## The steps
 
@@ -11,36 +11,28 @@ This guide will cover how to download a dataset about U.S. air carriers from a g
 
 #### Source
 
-- [Follow the Money)](http://beta.followthemoney.org/) - wherefrom the CSV is downloaded NEEDS BETTER LINK
+- [The National Institute on Money in State Politics)](http://beta.followthemoney.org/show-me?c-r-ot=D,J#[{1|) - (This is the institute's beta site, which should go live any time now). We wanted all contributions to state high court candidates and below. The site will eventually allow for download of all search results in csv, xml and json formats. The kinks haven't been worked out yet, so we were able to get a [custom txt file](http://assets.motherjones.com/interactives/projects/2014/4/judicial/JudicialContributionrequest.txt) directly from the institute.
 
 #### Tools
 
 - [Sequel Pro](http://www.sequelpro.com/) - A free MySQL client (for Mac OS X)
 - [Firefox SQLite Manager](https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager/?src) - A free plugin for SQLite (which will work just as well as MySQL)
+- [Google Spreadsheets](https://accounts.google.com/ServiceLogin?sacu=1&continue=https%3A%2F%2Fdrive.google.com%2F%23&hl=en&service=wise) - Free to use with a Google account.
 
 #### Produced data
 
-- [CSV to MySQL dump of T100 Domestic Segment data](data/sql/bts_data_t100_domestic_carriers-RAW.sql)
-- [Nov. 2013, T100 Domestic Segment CSV](data/T_T100D_SEGMENT_US_CARRIER_ONLY_2013_All.csv)
-- [Sample of T100 Domestic Segment CSV](data/sample-T100D-segment-data.csv)
+NEED TO FILL THIS PART IN
 
 
 ## About the data
 
-BTS has several databases related to air travel, including the T-100 Domestic Segment, which contains domestic flight route data. As of __March 2014__, the BTS has published the data through __November 2013__.
+The National Institute on Money in State Politics is a nonpartisan, nonprofit organization that systematically tracks down campaign conributon data in all 50 states. The organization says its [data represents information on](http://beta.followthemoney.org/about-us/): 
 
-|            |                   |
-| ---------  | ------------------|
-| Records    |  __6.3+ million__ |
-| Fields     | __45__ |
-| First Year | __1990__ |
-| Frequency  | __Monthly__ |
+> 100,000+ lobbyists and clients who register annually, and a 50-state database of contributions documenting $28 billion. Recent expansions include selected local-level data, and collection of reports submitted by independent spending entities in up to 32 states, and political action committees in up to 39 states. 
 
-The [official data description](http://www.transtats.bts.gov/TableInfo.asp?Table_ID=259):
 
-> This table contains domestic non-stop segment data reported by U.S. air carriers, including carrier, origin, destination, aircraft type and service class for transported passengers, freight and mail, available capacity, scheduled departures, departures performed, aircraft hours, and load factor when both origin and destination airports are located within the boundaries of the United States and its territories.
-
-## Download air carrier data file from BTS
+## Not sure if we're using this part***** 
+*I'm leaving his stuff in this section so I can duplicate it with mine if need be*
 
 ![The BTS web form](http://i.imgur.com/ppQw6Vx.png)
 
