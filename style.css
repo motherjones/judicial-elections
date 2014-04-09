@@ -1,0 +1,29 @@
+.judicial {
+	font-family: georgia;
+	width: 100%;
+}
+
+header {
+text-align: center;
+padding: 0 20%;
+}
+
+section {
+	display: inline-block;
+	margin-bottom: 3em;
+	padding: 0 1em;
+}
+
+section img {
+	float:right;
+	max-height: 50%;
+	width: 40%;
+}
+
+section p {
+	font-size: 1.2em;
+	line-height: 1.5em;
+	width: 40%;
+
+}
+
