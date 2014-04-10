@@ -24,7 +24,8 @@ section p {
 
 section img {
 	float:right;
-	max-width:50%;
+	width:400px;
+	padding-right: 2%;
 
 }
 
