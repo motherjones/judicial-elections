@@ -4,7 +4,7 @@ This is a data diary that walks through the steps of acquiring [campaign contrib
 
 ## The steps
 
-Design inspired by [NYT graphic on motorcycle fatalities](http://www.nytimes.com/interactive/2014/03/31/science/motorcycle-helmet-laws.html?_r=0)
+Design inspired by [NYT graphic on motorcycle fatalities](http://www.nytimes.com/interactive/2014/03/31/science/motorcycle-helmet-laws.html?_r=0) and [You vs. John Paul](https://mahifx.com/john-paulson/)
 ### Quick reference
 
 #### Source
