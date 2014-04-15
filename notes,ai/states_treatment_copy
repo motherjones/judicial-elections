@@ -2,11 +2,16 @@ Questions we can answer for the by-state/John Paulson treatment:
 data 
 (viz type)
 
--Judicial campaign contributions by year (reliably since 2000)
-(column chart) 
-
 -Type of judicial election
 (text)
+(1st)
+
+-Judicial campaign contributions by year (reliably since 2000)
+
+-Top recieving candidates
+(table/list/card?)
+(column chart) 
+
 
 -Biggest contributors by year (since 2000 to state high court candidates)
 (table, list, top 5?)
@@ -14,11 +19,8 @@ data
 -Lower court spending (in 10 states: Texas, Illinois, Florida, Michigan, Pennsylvania, California, Washington, New York, Wisconsin and Oregon)
 (table/column chart)
 
--Outside spending by year?(MAYBE)
+-Outside spending by year?(MAYBE) BRENNAN GATHERING DATA BY APRIL 19
 (line chart/column chart?)
-
--Top recieving candidates
-(table/list/card?)
 
 -percentage that went to incumbents v non incumbents
 (text)
