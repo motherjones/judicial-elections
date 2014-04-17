@@ -13,6 +13,10 @@ section {
 	margin-bottom: 3em;
 	padding: 0 1em;
 	width:100%;
+
+	border-bottom: 1px solid black;
+
+	min-height: 400px;
 }
 
 section p {
@@ -29,3 +33,15 @@ section img {
 
 }
 
+
+#section-nav {
+	position: fixed;
+	top: 1em;
+	left: 1em;	
+}
+
+#pinned-image-container {
+	position: fixed;
+	top: 200px;
+	right: 1em;	
+}
