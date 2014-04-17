@@ -25,27 +25,28 @@ section img {
 	float:right;
 	width:400px;
 	padding-right: 2%;
-
 }
 
 .topline {
 	width: 400px;
 	display: inline-table;
-
 }
 
 table {
   border-collapse: collapse; 
 }
+
 /* Zebra striping */
 tr:nth-of-type(odd) { 
   background: #eee; 
 }
+
 th { 
   background: #333; 
   color: white; 
   font-weight: bold; 
 }
+
 td, th { 
   padding: 6px; 
   border: 1px solid #ccc; 
