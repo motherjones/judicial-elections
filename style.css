@@ -30,7 +30,9 @@ section img {
 .topline {
 	width: 400px;
 	display: inline-table;
+	display:center;
 }
+
 
 table {
   border-collapse: collapse; 
@@ -74,5 +76,9 @@ nav {
 .nav a{
     display:inline-block;
     padding:10px;
+
+}
+
+ul {
 
 }
