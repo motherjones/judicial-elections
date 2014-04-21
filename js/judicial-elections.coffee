@@ -4,7 +4,7 @@ $sections = $("section")
 
 #$sections.css("min-height", docHeight)
 
-#$('section img').hide(50)
+$('section img').hide(150)
 
 $window = $(window)
 
@@ -12,26 +12,17 @@ $img = $('#pinned-image')
 
 $img.attr('src', $('section').first().find('img').attr('src'))
 
-
-
-checkInView = ->
-  docHeight = $(window).height()
-  winTop = $(window).scrollTop()
-  winBottom = winTop + $(window).height()
-  scrollTop = $(document).scrollTop()
-
-  console.log "check in view"
-  console.log scrollTop
-
+numberSections = ->
   $sections.each (i, el) ->
-    elTop = $(el).offset().top
-    elBottom = elTop + $(el).height()
+    $(el).attr('id', i)
 
-    if elTop >= winTop and elTop <= winBottom
-      $('#section-nav').text($(el).find('img').attr('src')+ " winTop: "+winTop+" elTop: "+elTop)
+numberSections()    
 
-      $img.attr('src', $(el).find('img').attr('src'))
+$(document).ready ->
 
-
-$window.on 'scroll', (e) ->
-  _.throttle(checkInView(), 750)
+  scrollorama = $.scrollorama({
+    blocks: '.section-panel'
+    })
+  
+  scrollorama.onBlockChange ->
+      $img.attr('src', $('#'+scrollorama.blockIndex).find('img').attr('src'))
