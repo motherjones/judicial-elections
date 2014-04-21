@@ -1,3 +1,33 @@
+/*	Resets   */
+/* apply a natural box layout model to all elements */
+/* from http://paulirish.com/2012/box-sizing-border-box-ftw/ */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* maxvoltar.com/archive/-webkit-font-smoothing */
+html {
+  -webkit-font-smoothing: antialiased;
+}
+/* basic fluidity http://fluidity.sexy/ */
+img,
+canvas,
+iframe,
+video,
+svg {
+  max-width: 100%;
+}
+
+#container {
+	position: relative;
+	max-width: 920px;
+	margin-left: auto;
+	margin-right: auto;
+	/*border: 1px solid black;*/
+}
+
+
 .judicial {
 	font-family: georgia;
 	width: 100%;
@@ -6,19 +36,36 @@
 header {
 	text-align: center;
 	padding: 0 20%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: white;
+	padding-bottom: 1em;
+	z-index: 5;
+	border-bottom: 1px solid grey;
 }
 
 section {
-	display: inline-block;
+	width: 100%;
 	margin-bottom: 3em;
 	padding: 0 1em;
-	width:100%;
+	/*width:100%;*/
+	position: relative;
+
+	/*border-bottom: 1px solid black;*/
+
+	min-height: 600px;
+
+	margin-left: 15%;
 }
+
 
 section p {
 	font-size: .99em;
 	line-height: 1.5em;
-	max-width:50%;
+	max-width:30%;
+	position: absolute;
+	bottom: 0;
 }
 
 section img {
@@ -80,5 +127,17 @@ nav {
 }
 
 ul {
+
+}
+#section-nav {
+	position: fixed;
+	top: 1em;
+	left: 1em;	
+}
+
+#pinned-image-container {
+	position: fixed;
+	top: 200px;
+	right: 200px;
 
 }
