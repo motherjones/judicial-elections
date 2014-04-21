@@ -25,9 +25,12 @@ $(document).ready(function() {
   var scrollorama;
 
   scrollorama = $.scrollorama({
-    blocks: '.section-panel'
+    blocks: '.section-panel',
+    enablePin: false
   });
   return scrollorama.onBlockChange(function() {
-    return $img.attr('src', $('#' + scrollorama.blockIndex).find('img').attr('src'));
+    return _.debounce($img.fadeOut(200, function() {
+      return $img.attr('src', $('#' + scrollorama.blockIndex).find('img').attr('src')).fadeIn(500);
+    }), 2000);
   });
 });

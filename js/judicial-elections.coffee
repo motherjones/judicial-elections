@@ -22,7 +22,13 @@ $(document).ready ->
 
   scrollorama = $.scrollorama({
     blocks: '.section-panel'
+    enablePin: false
     })
   
   scrollorama.onBlockChange ->
-      $img.attr('src', $('#'+scrollorama.blockIndex).find('img').attr('src'))
+      
+      # Restrict the function from executing repeatedly within 2s
+      # http://underscorejs.org/#debounce
+      _.debounce( $img.fadeOut(200, ->
+        $img.attr('src', $('#'+scrollorama.blockIndex).find('img').attr('src')).fadeIn(500)
+      ), 2000)
