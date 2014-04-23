@@ -5,6 +5,8 @@ docHeight = $(window).height();
 
 $sections = $("section");
 
+$sections.css("min-height", docHeight);
+
 $('section img').hide(150);
 
 $window = $(window);
@@ -12,6 +14,8 @@ $window = $(window);
 $img = $('#pinned-image');
 
 $img.attr('src', $('section').first().find('img').attr('src'));
+
+$('section').first().find('p').css('bottom', 'auto').css('top', '300px');
 
 numberSections = function() {
   return $sections.each(function(i, el) {
