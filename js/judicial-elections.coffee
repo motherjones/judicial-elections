@@ -4,13 +4,13 @@ $sections = $("section")
 
 $sections.css("min-height", docHeight)
 
-$('section img').hide(150)
+#$('section img').hide(150)
 
 $window = $(window)
 
-$img = $('#pinned-image')
+$img = $('#pinned-image-container')
 
-$img.attr('src', $('section').first().find('img').attr('src'))
+$img.html( $('section').first().find('.section-graphic').html() )
 
 $('section').first().find('p').css('bottom', 'auto').css('top', '300px')
 
@@ -32,5 +32,5 @@ $(document).ready ->
       # Restrict the function from executing repeatedly within 2s
       # http://underscorejs.org/#debounce
       _.debounce( $img.fadeOut(200, ->
-        $img.attr('src', $('#'+scrollorama.blockIndex).find('img').attr('src')).fadeIn(500)
+        $img.html($('#'+scrollorama.blockIndex).find('.section-graphic').html()).fadeIn(500)
       ), 2000)

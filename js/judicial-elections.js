@@ -7,13 +7,11 @@ $sections = $("section");
 
 $sections.css("min-height", docHeight);
 
-$('section img').hide(150);
-
 $window = $(window);
 
-$img = $('#pinned-image');
+$img = $('#pinned-image-container');
 
-$img.attr('src', $('section').first().find('img').attr('src'));
+$img.html($('section').first().find('.section-graphic').html());
 
 $('section').first().find('p').css('bottom', 'auto').css('top', '300px');
 
@@ -34,7 +32,7 @@ $(document).ready(function() {
   });
   return scrollorama.onBlockChange(function() {
     return _.debounce($img.fadeOut(200, function() {
-      return $img.attr('src', $('#' + scrollorama.blockIndex).find('img').attr('src')).fadeIn(500);
+      return $img.html($('#' + scrollorama.blockIndex).find('.section-graphic').html()).fadeIn(500);
     }), 2000);
   });
 });

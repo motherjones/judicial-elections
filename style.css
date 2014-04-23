@@ -74,6 +74,10 @@ section img {
 	padding-right: 2%;
 }
 
+section .section-graphic {
+	display: none;
+}
+
 .topline {
 	width: 400px;
 	display: inline-table;
