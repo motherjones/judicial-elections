@@ -143,5 +143,10 @@ ul {
 	position: fixed;
 	top: 320px;
 	right: 200px;
+	max-width: 250px;
+	width: 250px;
+}
 
+#pinned-image-container svg {
+	width: 100%;
 }
