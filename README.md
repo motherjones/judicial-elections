@@ -7,6 +7,16 @@ This is a data diary that walks through the steps of acquiring [campaign contrib
 Design inspired by [NYT graphic on motorcycle fatalities](http://www.nytimes.com/interactive/2014/03/31/science/motorcycle-helmet-laws.html?_r=0) and [You vs. John Paul](https://mahifx.com/john-paulson/)
 ### Quick reference
 
+#### Data
+Google spreadsheet publish URLs for each section:
+
++ Section 1 
++ Section 2
++ Section 3 <https://docs.google.com/spreadsheets/d/1MzVz_KTvgmxcuC11Z0UIPXYyqb418-6jRjHdPUKZnDo/pubhtml>
++ Section 4 <https://docs.google.com/spreadsheets/d/1KgJ8pHxwPvtxLH4bQLsxkpXxt1Gbj5JXVAl8Ho8c2ys/pubhtml>
+
+
+
 #### Source
 
 - [The National Institute on Money in State Politics)](http://beta.followthemoney.org/show-me?c-r-ot=D,J#[{1|) - (This is the institute's beta site, which should go live any time now). We wanted all contributions to state high court candidates and below. The site will eventually allow for download of all search results in csv, xml and json formats. The kinks haven't been worked out yet, so we were able to get a [custom txt file](http://assets.motherjones.com/interactives/projects/2014/4/judicial/JudicialContributionrequest.txt) directly from the institute.

@@ -22,6 +22,14 @@ numberSections()
 
 $(document).ready ->
 
+  
+
+  Tabletop.init(
+    key: 'https://docs.google.com/spreadsheets/d/1GoRtZDxS0sIcn1zfPW0NR9K5BVFKPjI6EkjWdd1Oog4/pubhtml'
+    callback: (data, tabletop) -> console.log(data)
+    simpleSheet: true  
+  )
+
   scrollorama = $.scrollorama({
     blocks: '.section-panel'
     enablePin: false
@@ -34,3 +42,6 @@ $(document).ready ->
       _.debounce( $img.fadeOut(200, ->
         $img.html($('#'+scrollorama.blockIndex).find('.section-graphic').html()).fadeIn(500)
       ), 2000)
+
+
+
