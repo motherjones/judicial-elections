@@ -26,6 +26,13 @@ numberSections();
 $(document).ready(function() {
   var scrollorama;
 
+  Tabletop.init({
+    key: 'https://docs.google.com/spreadsheets/d/1GoRtZDxS0sIcn1zfPW0NR9K5BVFKPjI6EkjWdd1Oog4/pubhtml',
+    callback: function(data, tabletop) {
+      return console.log(data);
+    },
+    simpleSheet: true
+  });
   scrollorama = $.scrollorama({
     blocks: '.section-panel',
     enablePin: false
