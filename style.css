@@ -27,6 +27,10 @@ svg {
 	/*border: 1px solid black;*/
 }
 
+svg {
+  
+}
+
 
 .judicial {
 	font-family: georgia;
@@ -43,6 +47,7 @@ header {
 	padding-bottom: 1em;
 	z-index: 5;
 	border-bottom: 1px solid grey;
+	height: 150px;
 }
 
 section {
@@ -50,27 +55,31 @@ section {
 	margin-bottom: 3em;
 	padding: 0 1em;
 	position: relative;
+	padding-top: 150px;
 
 	/*border-bottom: 1px solid black;*/
 
-	min-height: 600px;
+	min-height: 620px;
 
 	margin-left: 15%;
 }
 
-
 section p {
-	font-size: .99em;
+	font-size: 1.3em;
 	line-height: 1.5em;
-	max-width:30%;
+	max-width:40%;
 	position: absolute;
-	bottom: 0;
+	bottom: 3em;
 }
 
 section img {
 	float:right;
 	width:400px;
 	padding-right: 2%;
+}
+
+section .section-graphic {
+	display: none;
 }
 
 .topline {
@@ -136,7 +145,12 @@ ul {
 
 #pinned-image-container {
 	position: fixed;
-	top: 200px;
+	top: 320px;
 	right: 200px;
+	max-width: 250px;
+	width: 250px;
+}
 
+#pinned-image-container svg {
+	width: 100%;
 }
