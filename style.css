@@ -27,10 +27,9 @@ svg {
 	/*border: 1px solid black;*/
 }
 
-svg {
-  
+path {
+  fill: #ECE4D8;
 }
-
 
 .judicial {
 	font-family: georgia;
