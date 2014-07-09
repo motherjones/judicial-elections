@@ -2,13 +2,52 @@
 <html>
 	<head><title>Map</title>
 		<style type="text/css">
-			path.state.money, g.state.money path { fill: #00ff00; }
+			path.state.money, g.state.money path { fill: #BBFCAF; }
+			path#PA { fill: #00cc00; }
 			path.state, g.state {
 				fill: #eee;
+			}
+			#infobox { width: 50%;
+				background-color: rgba(255,255,255,0.5);
+				float: left;
+				position: fixed;
 			}
 		</style>
 	</head>
 	<body>
+		<div id="infobox">
+			<h1>Pennsylvania</h1>
+			<p>It's totally a state. Here's info.</p>
+				<section>
+					<h1>Top 5 contribution recipients since 2000:</h1>
+					<table>
+						<tr>
+							<th>Candidate</th>
+							<th>Amount reported since 2000</th>
+						</tr>
+						<tr>
+							<td>Jack A. Panella</td>
+							<td>$2,706,137</td>
+						</tr>
+						<tr>
+							<td>Joan Orie Melvin</td>
+							<td>$2,469,189</td>
+						</tr>
+						<tr>
+							<td>Seamus McCaffery</td>
+							<td>$2,297,753</td>
+						</tr>
+						<tr>
+							<td>Mike Krancer</td>
+							<td>$2,116,507</td>
+						</tr>
+						<tr>
+							<td>Maureen E. Lally-Green</td>
+							<td>$1,753,726</td>
+						</tr>
+					</table>
+				</section>
+		</div>
 		<svg id="svg3085" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 959 593" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
 		 <metadata id="metadata3145">
 		  <rdf:RDF>
