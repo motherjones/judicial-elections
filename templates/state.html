@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="state judicial elections explainer" content="Judicial Elections Explainer">
+		<meta name="AJ Vicens" content="Mother Jones">
+		<title>Judicial Elections</title>
+		<link rel="stylesheet" type="text/css" href="../style.css">
+		<!--[if lt IE 9]>
+		<script src=""></script>
+		<![endif]-->
+		<style type="text/css">
+		body {
+			font-family: verdana;
+		}
+		section {
+			float: none;
+			min-height: inherit;
+			margin-left: 10px;
+		}	
+
+		section img {
+			float: none;
+		}
+		</style>
+	</head>
+	<body>
+	{% for state in states %}
+	<article id="{{ state.abbreviation }}">
+
+		<h1>{{ state.name }}</h1>
+		<section class="topline">
+		<!--Maybe we can code the D3 to combine the sentence above with the graphic?-->
+			<img src="../img/state_election_type_ACS.png">
+			<p>Type of judicial election: <strong>{{ state.judicial_election_type }}</strong></p>
+			<p>Average donation to candidates: <strong>{{ state.average_donation }}</strong></p>
+			<p>Ranking: <strong>{{ state.ranking_blurb }}</strong></p>
+		</section>
+		
+		<section>
+			<h2>Judicial campaign contributions since 2000: <span>{{ state.judicial_campaign_contributions }}</span></h2>
+			<img src="../img/{{ state.abbreviation }}_jud_conts_2k-14.png">
+		</section>		
+
+		<section>	
+			<p>Outside spending (estimated 2000-09): <span>{{ state.outside_spending }}</span></p>
+			<img src="../img/{{ state.abbreviation }}_jud_conts_2k-14.png">
+		</section>
+		
+		<section>
+			<h2>Top 5 contribution recipients since 2000:</h2>
+			<table>
+				<tr>
+					<th>Candidate</th>
+					<th>Amount reported since 2000</th>
+				</tr>
+				{% for recipient in state.contribution_recipients %}
+				<tr>
+					<td>{{ recipient.name }}</td>
+					<td>{{ recipient.amount }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</section>
+		
+		<section>	
+			<h2>Top 5 contributors since 2000:</h2>
+			<table>
+				<tr>
+					<th>Contributor</th>
+					<th>Amount reported since 2000</th>
+				</tr>
+				{% for contributor in state.contributors %}
+				<tr>
+					<td>{{ contributor.name }}</td>
+					
+					<td>{{ contributor.amount }}</td>
+				</tr>
+				{% endfor %}
+			</table>
+		</section>
+		
+		<section>
+			<h2>Top contributing industries since 2000:</h2>
+			<table>
+				<thead>
+				<tr>
+						<th>Industry</th>
+						<th>Amount reported since 2000</th>
+				</tr>
+				</thead>
+				<tbody>
+					{% for industry in state.contributing_industries %}
+					<tr>
+						<td>{{ industry.name }}</td>
+						<td>{{ industry.amount }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</section>
+
+		<p class="summary">Total contributions to lower-court candidates during the 2011-12 cycle: <span>{{ state.total_contributions}}</span></p>
+
+	</article>
+	{% endfor %}
+	</body>
+</html>
