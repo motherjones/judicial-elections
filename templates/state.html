@@ -25,7 +25,6 @@
 		</style>
 	</head>
 	<body>
-	{% for state in states %}
 	<article id="{{ state.abbreviation }}">
 
 		<h1>{{ state.name }}</h1>
@@ -103,6 +102,5 @@
 		<p class="summary">Total contributions to lower-court candidates during the 2011-12 cycle: <span>{{ state.total_contributions}}</span></p>
 
 	</article>
-	{% endfor %}
 	</body>
 </html>
