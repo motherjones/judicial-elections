@@ -19,6 +19,20 @@ svg {
   max-width: 100%;
 }
 
+header {
+	text-align: center;
+	padding: 0 20%;
+/*	position: fixed;
+	top: 0;
+	left: 0;
+*/
+	background-color: white;
+	padding-bottom: 1em;
+	z-index: 5;
+	border-bottom: 1px solid grey;
+	height: 150px;
+}
+
 #container {
 	position: relative;
 	max-width: 920px;
@@ -36,18 +50,7 @@ path {
 	width: 100%;
 }
 
-header {
-	text-align: center;
-	padding: 0 20%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background-color: white;
-	padding-bottom: 1em;
-	z-index: 5;
-	border-bottom: 1px solid grey;
-	height: 150px;
-}
+
 
 section {
 	width: 100%;
