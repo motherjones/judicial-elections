@@ -13,7 +13,7 @@ $img = $('#pinned-image-container');
 
 $img.html($('section').first().find('.section-graphic').html());
 
-$('section').first().find('p').css('bottom', 'auto').css('top', '300px');
+$('section').first().find('p').css('bottom', 'auto');
 
 numberSections = function() {
   return $sections.each(function(i, el) {
@@ -25,12 +25,11 @@ numberSections();
 
 $(document).ready(function() {
   var scrollorama = $.scrollorama({
-    blocks: '.section-panel',
-    enablePin: false
+    blocks: '.section-panel'
   });
   return scrollorama.onBlockChange(function() {
     return _.debounce($img.fadeOut(200, function() {
       return $img.html($('#' + scrollorama.blockIndex).find('.section-graphic').html()).fadeIn(500);
-    }), 2000);
+    }));
   });
 });

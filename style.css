@@ -1,34 +1,27 @@
 
-img {
-  max-width: 100%;
+
+#container {
+
 }
 
-
+#pinned-image-container {
+	position: fixed;
+	top: 20em;
+	left: 20%;
+}
 
 section {
-	width: 100%;
-	position: relative;
+
 }
 
 section p {
-	max-width:40%;
 	position: absolute;
 	bottom: 3em;
-}
-
-section img {
-
 }
 
 section .section-graphic {
 	display: none;
 }
 
-
-#pinned-image-container {
-	position: fixed;
-	top: 320px;
-	right: 200px;
-	max-width: 250px;
-	width: 250px;
+img {
 }
