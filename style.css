@@ -1,17 +1,11 @@
 
-
-#container {
-
-}
-
 #pinned-image-container {
 	position: fixed;
-	top: 20em;
-	left: 20%;
+	top: 10em;
+	right:50em;
 }
 
 section {
-
 }
 
 section p {

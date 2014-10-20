@@ -13,7 +13,7 @@ $img = $('#pinned-image-container');
 
 $img.html($('section').first().find('.section-graphic').html());
 
-$('section').first().find('p').css('bottom', 'auto');
+$('section').first().find('p').css('bottom', 'auto').css('top', '100px');
 
 numberSections = function() {
   return $sections.each(function(i, el) {
