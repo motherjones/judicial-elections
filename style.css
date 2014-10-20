@@ -1,149 +1,29 @@
-/*	Resets   */
-/* apply a natural box layout model to all elements */
-/* from http://paulirish.com/2012/box-sizing-border-box-ftw/ */
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* maxvoltar.com/archive/-webkit-font-smoothing */
-html {
-  -webkit-font-smoothing: antialiased;
-}
-/* basic fluidity http://fluidity.sexy/ */
-img,
-canvas,
-iframe,
-video,
-svg {
+
+img {
   max-width: 100%;
-}
-
-header {
-	text-align: center;
-	padding: 0 20%;
-/*	position: fixed;
-	top: 0;
-	left: 0;
-*/
-	background-color: white;
-	padding-bottom: 1em;
-	z-index: 5;
-	border-bottom: 1px solid grey;
-	height: 150px;
-}
-
-#container {
-	position: relative;
-	max-width: 920px;
-	margin-left: auto;
-	margin-right: auto;
-	/*border: 1px solid black;*/
-}
-
-path {
-  fill: #ECE4D8;
-}
-
-.judicial {
-	font-family: georgia;
-	width: 100%;
 }
 
 
 
 section {
 	width: 100%;
-	margin-bottom: 3em;
-	padding: 0 1em;
 	position: relative;
-	padding-top: 150px;
-
-	/*border-bottom: 1px solid black;*/
-
-	min-height: 620px;
-
-	margin-left: 15%;
 }
 
 section p {
-	font-size: 1.3em;
-	line-height: 1.5em;
 	max-width:40%;
 	position: absolute;
 	bottom: 3em;
 }
 
 section img {
-	float:right;
-	width:400px;
-	padding-right: 2%;
+
 }
 
 section .section-graphic {
 	display: none;
 }
 
-.topline {
-	width: 400px;
-	display: inline-table;
-	display:center;
-}
-
-
-table {
-  border-collapse: collapse; 
-}
-
-/* Zebra striping */
-tr:nth-of-type(odd) { 
-  background: #eee; 
-}
-
-th { 
-  background: #333; 
-  color: white; 
-  font-weight: bold; 
-}
-
-td, th { 
-  padding: 6px; 
-  border: 1px solid #ccc; 
-  text-align: left; 
-}
-
-h1 span {
-	font-weight:normal;
-}
-
-nav {
-    border:1px solid #ccc;
-    border-width:1px 0;
-    list-style-type: none;
-    list-style:none;
-    list-style-image:none;
-    margin:0;
-    padding:0;
-    text-align:center;
-}
-.nav li{
-    display: inline-block;
-}
-
-.nav a{
-    display:inline-block;
-    padding:10px;
-
-}
-
-ul {
-
-}
-#section-nav {
-	position: fixed;
-	top: 1em;
-	left: 1em;	
-}
 
 #pinned-image-container {
 	position: fixed;
@@ -151,8 +31,4 @@ ul {
 	right: 200px;
 	max-width: 250px;
 	width: 250px;
-}
-
-#pinned-image-container svg {
-	width: 100%;
 }
