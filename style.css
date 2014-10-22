@@ -1,68 +1,57 @@
 
 body {
-  color: #5a5a5a;
-
+color: #5a5a5a;
 }
 
 .jumbotron {
-  border-bottom: 1px solid #e5e5e5;
-  margin-top: 30px;
+border-bottom: 1px solid #e5e5e5;
+margin-top: 30px;
 }
 
 .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
+margin-bottom: 20px;
+text-align: center;
 }
 
 .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+margin-right: 10px;
+margin-left: 10px;
 }
 
 section {
-
-  padding: 3em;
-  margin-bottom: 13em;
-}
-
-#start {
-
+padding: 3em;
 }
 
 section#oconnor {
-  height: inherit;
-  border-bottom: 1px dotted #333;
-  margin-bottom: 10em;
+height: inherit;
+border-bottom: 1px dotted #333;
+margin-bottom: 10em;
 }
 
 h2 {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+font-weight: 300;
+line-height: 1;
+letter-spacing: -1px;
 }
 
-
-
+.jump {
+  margin-bottom: 10em;
+}
 
 @media (max-width: 800px) {
-  .jumbotron  {
 
-  }
-  section {
-
-  }
- section .btn {
-  padding: 2px 5px;
+/*section .btn {
+padding: 2px 5px;
 font-size: 11px;
 line-height: 1.5;
 border-radius: 3px;
 }
-}
+}*/
 
 @media (max-width: 300px) {
 
-  section {
-  }
+section {
+}
 
 }
 
