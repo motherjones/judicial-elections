@@ -17,9 +17,6 @@ section {
 padding: 3em;
 }
 
-section#start {
-}
-
 h2 {
 font-weight: 300;
 line-height: 1;
@@ -29,6 +26,11 @@ letter-spacing: -1px;
 .jump {
 margin-bottom: 14em;
 }
+
+.last {
+  margin-bottom: 8em;
+}
+
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
