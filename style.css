@@ -1,75 +1,75 @@
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below t he footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
+
 }
 
-.container {
-  height:450px;
-  overflow: scroll;
-}
-
-/* Main marketing message and sign up button */
 .jumbotron {
   border-bottom: 1px solid #e5e5e5;
   margin-top: 30px;
   margin-bottom: 90px;
 }
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
 
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
 }
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
+
+.col-lg-4 p {
   margin-right: 10px;
   margin-left: 10px;
 }
 
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 80px 0; /* Space out the Bootstrap <hr> more */
-
+section {
+  height: 100%;
+  position: relative;
+  padding: 3em;
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
+section#oconnor {
+  height: inherit;
+  border-bottom: 1px dotted #333;
+  margin-bottom: 10em;
+}
+
+h2 {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
 }
 
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-
-  .featurette-heading {
-    font-size: 50px;
-  }
+.jump {
+  position: absolute;
+  top: 50%;
 }
 
-@media (min-width: 992px) {
-  .featurette-heading {
 
+
+@media (max-width: 800px) {
+  .jumbotron  {
+    height: 95%;
+    margin: 1em;
+    padding: 3em;
   }
+  section {
+    padding: 2em;
+  }
+ section .btn {
+  display: none;
 }
+}
+
+@media (max-width: 300px) {
+  .jumbotron  {
+    height: 95%;
+    margin: 1em;
+    padding: 3em;
+  }
+  section {
+    padding: 2em;
+  }
+ section .btn {
+  display: none;
+}
+}
+
