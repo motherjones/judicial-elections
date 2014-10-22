@@ -18,12 +18,7 @@ padding: 3em;
 }
 
 section#start {
-margin-top: 10em;
 }
-
-section#superspenders {
-}
-
 
 h2 {
 font-weight: 300;
@@ -35,20 +30,16 @@ letter-spacing: -1px;
 margin-bottom: 14em;
 }
 
-@media (max-width: 800px) {
+@media only screen and (min-width : 320px) and (max-width : 480px) {
 
-/*section .btn {
-padding: 2px 5px;
-font-size: 11px;
-line-height: 1.5;
-border-radius: 3px;
+.jump {
+  display: none;
 }
-}*/
-
-@media (max-width: 300px) {
-
 section {
+  padding: 1em;
+  margin-bottom: 10em;
 }
-
+h1 {
+	font-size: 1.5em;
 }
-
+}
