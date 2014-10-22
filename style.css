@@ -3,11 +3,6 @@ body {
 color: #5a5a5a;
 }
 
-.jumbotron {
-border-bottom: 1px solid #e5e5e5;
-margin-top: 30px;
-}
-
 .col-lg-4 {
 margin-bottom: 20px;
 text-align: center;
@@ -22,9 +17,13 @@ section {
 padding: 3em;
 }
 
-section#oconnor {
-margin-bottom: 10em;
+section#start {
+margin-top: 10em;
 }
+
+section#superspenders {
+}
+
 
 h2 {
 font-weight: 300;
@@ -33,7 +32,7 @@ letter-spacing: -1px;
 }
 
 .jump {
-  margin-bottom: 14em;
+margin-bottom: 14em;
 }
 
 @media (max-width: 800px) {
