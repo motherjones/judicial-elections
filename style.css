@@ -12,6 +12,9 @@ section:nth-child(odd) {
     background-color: #eee;
 }
 
+#oconnor h2 {
+  line-height: 1.3em;
+}
 .readmore {
   text-align: center;
 }
@@ -30,14 +33,9 @@ letter-spacing: -1px;
 @media only screen and (min-width : 320px) and (max-width : 480px) {
 
 section {
-  padding: 2em;
+  padding: 1em;
 }
-
 .readmore .col-sm-4 {
 margin-top: 5em;
-}
-
-h1 {
-	font-size: 1.5em;
 }
 }
