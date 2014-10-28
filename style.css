@@ -9,14 +9,16 @@ margin: 3em 0em;
 }
 
 section:nth-child(odd) {
-    background-color: #eee;
+background-color: #eee;
 }
 
-#oconnor h2 {
-  line-height: 1.3em;
+#oconnor  {
+padding: 0em;
+margin: 0em;
 }
+
 .readmore {
-  text-align: center;
+text-align: center;
 }
 
 .readmore p {
